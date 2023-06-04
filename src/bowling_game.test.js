@@ -29,4 +29,11 @@ describe("Calculate scores for a normal game of bowling with 10 frames", () => {
       ])
     ).toBe(79);
   });
+  test("Various scores for each roll, with one frame a strike (not last frame)", () => {
+    expect(
+      calculateScores([
+        2, 3, 4, 1, 10, 4, 5, 2, 3, 0, 1, 8, 1, 2, 4, 5, 1, 0, 3,
+      ])
+    ).toBe(68);
+  });
 });
