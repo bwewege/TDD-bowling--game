@@ -51,8 +51,8 @@ describe("Calculate scores for a normal game of bowling with 10 frames", () => {
     ).toBe(77);
   });
   test("Perfect game, all strikes", () => {
-    expect(calculateScores([10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10])).toBe(
-      300
-    );
+    expect(
+      calculateScores([10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10])
+    ).toBe(300);
   });
 });
