@@ -43,4 +43,11 @@ describe("Calculate scores for a normal game of bowling with 10 frames", () => {
       ])
     ).toBe(101);
   });
+  test("Consecutive spare and strike frames", () => {
+    expect(
+      calculateScores([
+        3, 4, 8, 2, 10, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+      ])
+    ).toBe(77);
+  });
 });
